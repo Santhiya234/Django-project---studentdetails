@@ -3,7 +3,7 @@ from rest_framework import serializers
 from django.contrib.auth import authenticate
 from Userapp.models import UserDetails
 from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
-
+#something
 class RegisterSerializer(serializers.ModelSerializer):
     password2 = serializers.CharField(style={'input_type':'password'}, write_only=True)
     class Meta:
